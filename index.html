@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys T-Shirt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Ecommerce</div>
+        <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="product-image">
+            <div class="image-slider">
+                <img id="mainImage" src="img/image1.jpg" alt="Boys T-Shirt">
+            </div>
+            <div class="image-thumbnails">
+                <img src="img/image1.jpg" alt="Image 1" onclick="showImg(this)">
+                <img src="img/image2.jpg" alt="Image 2" onclick="showImg(this)">
+                <img src="img/image3.jpg" alt="Image 3" onclick="showImg(this)">
+                <img src="img/image4.jpg" alt="Image 4" onclick="showImg(this)">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Boys T-Shirt</h1>
+            <div class="rating">
+                <span>★★★★☆</span> (6 Reviews)
+            </div>  
+            <div class="price">
+                Price: ₹549
+            </div>
+        </div>
+        
+        <div class="size-selection">
+            <label>Select Size:</label>
+            <div class="size-buttons">
+                <button class="size-btn">S</button>
+                <button class="size-btn">M</button>
+                <button class="size-btn">L</button>
+                <button class="size-btn">XL</button>
+            </div>
+        </div>
+                    <div class="buttons">
+                <button class="wishlist">Add to Wishlist</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="offers-container">
+                <!-- Offer Box -->
+                <div class="offer-box">
+                    <i class="fas fa-tag offer-icon"></i>
+                    <div class="offer-details">
+                        <p class="offer-title">Get it for as low as <span class="offer-price">₹366</span> <span class="old-price">₹549</span></p>
+                        <p class="offer-text">Buy 3 @ ₹1099. Add 3 products in your cart to avail the offer.</p>
+                        <p class="offer-footer">Offer will be auto-applied <span class="offer-terms">OFFER T&C</span></p>
+                    </div>
+                </div>
+                <!-- Coupon Input Section -->
+        <div class="coupon-container">
+            <h3>Have a coupon?</h3>
+            <div class="coupon-input">
+                <input type="text" id="couponCode" placeholder="Enter coupon code" />
+                <button id="applyCoupon">Apply</button>
+            </div>
+            <p id="couponMessage" class="coupon-message"></p>
+        </div>
+    </div>
+
+            <div class="key-highlights">
+                <h2>Key Highlights</h2>
+                <ul>
+                    <li>100% Cotton</li>
+                    <li>Machine Washable</li>
+                    <li>Available in multiple colors</li>
+                    <li>Comfortable fit</li>
+                    <li>Breathable & Soft Fabric</li>
+                    <li>Skin-friendly & Non-Irritating Material</li>
+                    <li>Durable Stitching for Long-lasting Wear</li>
+                    <li>Perfect for Casual & Everyday Wear</li>
+                    <li>Trendy & Stylish Design</li>
+                    <li>Eco-friendly & Sustainable Fabric</li>
+                </ul>
+            </div>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="reviews-container">
+                    <div class="review">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Great quality! - <strong>John Doe</strong></p>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-user-circle"></i>
+                        <p>My son loves it! - <strong>Jane Smith</strong></p>
+                        <span class="stars">★★★★☆</span>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Fits perfectly! - <strong>Mike Johnson</strong></p>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Highly recommend! - <strong>Emily Davis</strong></p>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Good value for money. - <strong>Chris Lee</strong></p>
+                        <span class="stars">★★★★☆</span>
+                    </div>
+                    <div class="review">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Color is vibrant! - <strong>Sarah Brown</strong></p>
+                        <span class="stars">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-products">
+            <h2>Similar Products</h2>
+            <div class="products-container">
+                <div class="product">
+                    <img src="img/similar1.jpg" alt="Similar Product 1">
+                    <p>Boys T-Shirt 1</p>
+                    <span>★★★★☆</span>
+                    <p>Price: ₹399</p>
+                </div>
+                <div class="product">
+                    <img src="img/similar2.jpg" alt="Similar Product 2">
+                    <p>Boys T-Shirt 2</p>
+                    <span>★★★★☆</span>
+                    <p>Price: ₹449</p>
+                </div>
+                <div class="product">
+                    <img src="img/similar3.jpg" alt="Similar Product 3">
+                    <p>Boys T-Shirt 3</p>
+                    <span>★★★★☆</span>
+                    <p>Price: ₹499</p>
+                </div>
+                <div class="product">
+                    <img src="img/similar4.jpg" alt="Similar Product 4">
+                    <p>Boys T-Shirt 4</p>
+                    <span>★★★★☆</span>
+                    <p>Price: ₹550</p>
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 E-commerce Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
