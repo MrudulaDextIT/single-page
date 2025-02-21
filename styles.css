@@ -363,7 +363,6 @@ body {
     margin-top: 10px;
 }
 
-
 /* General Styles */
 .key-highlights,
 .customer-reviews {
@@ -392,7 +391,7 @@ body {
 }
 
 /* Fix Layout Issues */
-.key-highlights ul,
+
 .reviews-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Auto responsive grid */
@@ -401,6 +400,16 @@ body {
     padding: 0;
     margin: 0 auto;
     max-width: 85%;
+}
+.key-highlights_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Auto responsive grid */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 85%;
+
 }
 
 /* Ensure List Items Stay in Place */
@@ -424,18 +433,41 @@ body {
 
 /* Fix Mobile View */
 @media (max-width: 768px) {
-    .key-highlights ul,
-    .reviews-container {
-        grid-template-columns: 1fr; /* Single column for mobile */
-    }
-
+    /* Ensure both sections are stacked on top of each other */
     .key-highlights,
     .customer-reviews {
         width: 90%;
         max-width: 400px;
-        margin-top: 80px !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; /* Add margin for spacing */
+    }
+
+    
+    .reviews-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        padding-left: 0;
+    }
+    .key-highlights_container{
+        grid-template-columns: 1fr; /* Single column for mobile */
+        padding-left: 0;
+        
+    }
+
+    /* Add spacing between the two sections */
+    .key-highlights_container,
+    .customer-reviews {
+        padding: 15px;
+    }
+
+    /* Adjust the text size if necessary */
+    .key-highlights h2,
+    .customer-reviews h2 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
     }
 }
+
+
 
 
 .similar-products {
